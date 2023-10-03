@@ -253,23 +253,22 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
-   let cont = 0;
-   let array = [];
+   let cont=0;
+   let array=[];
 
-   while (cont < 10) {
-      
-      if (cont === 4) {
-         cont++;
+   while(cont < 10){
+      cont++
+
+      if (cont === 5)
          continue;
-      }
-      num = num + 2;
-      array[cont] = num;
-      cont++;
-   }
 
-   return array;
+      num = num + 2
+      array.push(num);
+  };
 
+  return array
 }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
